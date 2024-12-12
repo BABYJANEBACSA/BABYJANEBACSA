@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Baby Jane M. Bacsa</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <header>
+          <h1>Portfolio of Baby Jane M. Bacsa</h1>
+          <nav>
+              <ul>
+                  <li><a href= "#" data-target="about">About Me</a></li>
+                  <li><a href= "#" data-target="achievements">Achievements</a></a></li>
+                  <li><a href= "#" data-target="skills">Skills</a></a></li>
+                  <li><a href= "#" data-target="projects">Projects</a></a></li>
+                  <li><a href= "#" data-target="sdg">SDG Focus</a></a></li>
+                  <li><a href= "#" data-target="contact">Contact</a></a></li>
+              </ul>
+          </nav>
+      </header>
+      
+      <section id="about" class="active">
+          <div class="profile">
+              <img src= https://assets.onecompiler.app/42zzvkuq6/42zzvfag3/395428008_245174521544289_4585108232544500812_n.jpg
+              ><h2>Welcome!</h2>
+              <p>Hi, I’m Baby Jane M. Bacsa, an IT student from Batangas State University, being an IT student is an exciting journey that opens the door to endless learning and growth. It's not just about understanding computers and technology; it's about developing problem-solving skills, creativity, and the ability to innovate. IT education goes hand in hand with quality education because it prepares us to adopt to a fast-changing world while ensuring we have the tools to make a positive impact. It's about more than technical skills- it's about creating opportunities, connecting people, and building a better future for everyone.</p>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>With Honors 🏆</li>
+            <li>Yes-O Awardee</li>
+            <li>Conduct Awardee</li>
+            </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <ul>
+            <li>
+                <img src="https://via.placeholder.com/200" alt="Project 1">
+                <p>E-Learning Website</p>
+            </li>
+            <li>
+                <img src="https://via.placeholder.com/200" alt="Project 2">
+                <p>Portfolio Showcase</p>
+            </li>
+             <li>
+                <img src="https://via.placeholder.com/200" alt="Project 3">
+                <p>E-Learning Website</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="sdg">
+        <h2>SDG Focus: Gender Equality</h2>
+        <p>My focus is on *Goal #4: Quality Education*, aiming to ensure inclusive, equitable, and quality education for all and promote lifelong learning opportunities.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <ul>
+            <li>Email:babyjanebacsa@gmail.com</li>
+            <li>Phone: +63 994 947 2419</li>
+            <li>Facebook: Baby Jane Bacsa</li>
+           </a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Baby Jane M. Bacsa. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const links = document.querySelectorAll('nav a');
+        const sections = document.querySelectorAll('section');
+
+        links.forEach(link => {
+            link.addEventListener('click', event => {
+                event.preventDefault();
+                const targetId = link.getAttribute('data-target');
+
+                sections.forEach(section => {
+                    section.classList.toggle('active', section.id === targetId);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
